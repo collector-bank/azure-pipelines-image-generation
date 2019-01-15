@@ -7,7 +7,7 @@ trigger:
 - master
 
 queue:
-  name: "Docker-linux"
+  name: "Docker-Linux"
 
 steps:
 - script: echo Hello, world!
