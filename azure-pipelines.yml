@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Docker-Linux'
+queue:
+  name: "Docker-linux"
 
 steps:
 - script: echo Hello, world!
