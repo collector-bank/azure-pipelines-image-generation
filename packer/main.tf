@@ -19,6 +19,7 @@ module "nsg" {
 module "subnet_nsg_connection" {
   source = "./subnet-nsg-connection"
   resource_group_name = "${var.resource_group_name}"
+  vnet_name = "${module.vnet.vnet_name}"
   subnet_name = "${module.vnet.subnet_name}"
   nsg_name = "${module.nsg.nsg_name}"
 }

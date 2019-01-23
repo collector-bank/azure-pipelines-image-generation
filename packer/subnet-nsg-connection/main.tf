@@ -5,6 +5,7 @@ data "azurerm_resource_group" "group" {
 data "azurerm_subnet" "subnet" {
   name = "${var.subnet_name}"
   resource_group_name = "${data.azurerm_resource_group.group.name}"
+  virtual_network_name = "${var.vnet_name}"
 }
 
 data "azurerm_network_security_group" "nsg" {
