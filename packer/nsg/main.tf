@@ -32,7 +32,7 @@ resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_RDP" {
   destination_address_prefix = "*"
 
   resource_group_name = "${data.azurerm_resource_group.group.name}"
-  network_security_group_name = "${data.data.azurerm_network_security_group.nsg.name}"
+  network_security_group_name = "${data.azurerm_network_security_group.nsg.name}"
 }
 
 resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_WinRM_HTTP" {
