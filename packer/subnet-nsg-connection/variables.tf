@@ -3,11 +3,6 @@ variable "resource_group_name" {
   default = "#{resource_group_name}"
 }
 
-variable "vnet_name" {
-  type = "string"
-  default = "#{vnet_name}"
-}
-
 variable "subnet_name" {
   type = "string"
   default = "#{subnet_name}"
