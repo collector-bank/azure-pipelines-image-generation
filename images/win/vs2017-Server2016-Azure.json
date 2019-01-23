@@ -42,7 +42,7 @@
             "winrm_insecure": "true",
             "winrm_timeout": "4h",
             "winrm_username": "packer",
-            "managed_image_name": "{{user `image_name`}}",
+            "managed_image_name": "{{user `image_name`}}-{{user `image_version`}}",
             "managed_image_resource_group_name": "{{user `resource_group`}}",
             "private_virtual_network_with_public_ip": "true",
             "virtual_network_name": "{{user `vnet_name`}}",
