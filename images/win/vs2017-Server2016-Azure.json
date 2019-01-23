@@ -45,7 +45,7 @@
             "managed_image_name": "{{user `image_name`}}",
             "managed_image_resource_group_name": "{{user `resource_group`}}",
             "private_virtual_network_with_public_ip": "true",
-            "virtial_network_name": "{{user `vnet_name`}}",
+            "virtual_network_name": "{{user `vnet_name`}}",
             "virtual_network_resource_group_name": "{{user `vnet_group_name`}}",
             "virtual_network_subnet_name": "{{user `subnet_name`}}"
         }
