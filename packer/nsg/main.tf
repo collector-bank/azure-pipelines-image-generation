@@ -32,7 +32,7 @@ resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_RDP" {
   destination_address_prefix = "*"
 
   resource_group_name = "${data.azurerm_resource_group.group.name}"
-  network_security_group_name = "${azurerm_network_security_group.nsg.name}"
+  network_security_group_name = "${data.data.azurerm_network_security_group.nsg.name}"
 }
 
 resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_WinRM_HTTP" {
@@ -50,7 +50,7 @@ resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_WinRM_HTTP" 
   destination_address_prefix = "*"
 
   resource_group_name = "${data.azurerm_resource_group.group.name}"
-  network_security_group_name = "${azurerm_network_security_group.nsg.name}"
+  network_security_group_name = "${data.azurerm_network_security_group.nsg.name}"
 }
 
 resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_WinRM_HTTPS" {
@@ -68,11 +68,5 @@ resource "azurerm_network_security_rule" "Allow_Inbound_Buildagents_WinRM_HTTPS"
   destination_address_prefix = "*"
 
   resource_group_name = "${data.azurerm_resource_group.group.name}"
-  network_security_group_name = "${azurerm_network_security_group.nsg.name}"
+  network_security_group_name = "${data.azurerm_network_security_group.nsg.name}"
 }
-
-resource "azurerm_subnet_network_security_group_association" "subnet_nsg_connection" {
-  subnet_id = "${azurerm_subnet.subnet.id}"
-  network_security_group_id = "${azurerm_network_security_group.nsg.id}"
-}
-
