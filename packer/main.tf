@@ -1,5 +1,5 @@
 module "vnet" {
-  source = "./vnet"
+  source = "../vnet"
   resource_group_name = "${var.resource_group_name}"
   vnet_name = "${var.vnet_name}"
   vnet_address_space = "${var.vnet_address_space}"
@@ -9,7 +9,7 @@ module "vnet" {
 }
 
 module "nsg" {
-  source = "./nsg"
+  source = "../nsg"
   resource_group_name = "${var.resource_group_name}"
   nsg_name = "${var.nsg_name}"
   buildagents_resource_group_name = "${var.buildagents_resource_group_name}"
@@ -17,7 +17,7 @@ module "nsg" {
 }
 
 module "subnet_nsg_connection" {
-  source = "./subnet-nsg-connection"
+  source = "../subnet-nsg-connection"
   resource_group_name = "${var.resource_group_name}"
   vnet_name = "${module.vnet.vnet_name}"
   subnet_name = "${module.vnet.subnet_name}"
