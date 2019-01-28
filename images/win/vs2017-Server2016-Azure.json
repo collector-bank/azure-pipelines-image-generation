@@ -8,7 +8,7 @@
         "location": "#{location}",
         "image_name": "#{image_name}",
         "image_version": "#{image_version}",
-        "vm_size": "Standard_B4ms",
+        "vm_size": "Standard_DS3_v2",
 
         "image_folder": "C:\\image",
         "commit_file": "C:\\image\\commit.txt",
