@@ -10,8 +10,8 @@ source $HELPER_SCRIPTS/document.sh
 
 DEFAULT_JDK_VERSION=8
 
-#Install Azul jdks
-#Documentation for Azul JDK installation can be found here: https://www.azul.com/downloads/azure-only/zulu/
+# Install the Azul Systems Zulu JDKs
+# See https://www.azul.com/downloads/azure-only/zulu/
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9
 apt-add-repository "deb http://repos.azul.com/azure-only/zulu/apt stable main"
 apt-get -q update
