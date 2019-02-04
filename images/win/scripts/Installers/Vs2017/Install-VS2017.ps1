@@ -106,7 +106,9 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17134 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre '
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre '+ `
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre ' + `
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre '
 
 $Sku = 'Enterprise'
 $VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'

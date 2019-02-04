@@ -37,7 +37,7 @@ ln -s /usr/share/apache-maven-3.6.0/bin/mvn /usr/bin/mvn
 echo "M2_HOME=/usr/share/apache-maven-3.6.0" | tee -a /etc/environment
 
 # Install Gradle
-gradle_version="5.1"
+gradle_version="5.1.1"
 curl -sL https://services.gradle.org/distributions/gradle-"${gradle_version}"-bin.zip -o gradle-"${gradle_version}".zip
 unzip -d /usr/share gradle-"${gradle_version}".zip
 ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle

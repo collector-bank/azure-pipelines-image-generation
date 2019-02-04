@@ -444,6 +444,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.1.403 C:\Program Files\dotnet\sdk\2.1.403
 * 2.1.402 C:\Program Files\dotnet\sdk\2.1.402
 * 2.1.401 C:\Program Files\dotnet\sdk\2.1.401
 * 2.1.400 C:\Program Files\dotnet\sdk\2.1.400
@@ -468,11 +469,13 @@ _SDK:_
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
+* 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
 * 1.1.10 C:\Program Files\dotnet\sdk\1.1.10
 * 1.0.4 C:\Program Files\dotnet\sdk\1.0.4
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.5
 * 2.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.4
 * 2.1.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.3
 * 2.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.2
@@ -491,12 +494,14 @@ _Runtime:_
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
 * 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
+* 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
 * 1.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.1
 * 1.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.9
 * 1.0.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.8
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
 * 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
 * 1.0.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.11
 * 1.0.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.10

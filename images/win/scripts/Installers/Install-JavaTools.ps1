@@ -6,8 +6,8 @@
 
 # Download the Azul Systems Zulu JDKs
 # See https://www.azul.com/downloads/azure-only/zulu/
-$azulJDK8Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-8/8u192/zulu-8-azure-jdk_8.33.0.1-8.0.192-win_x64.zip'
-$azulJDK11Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.1/zulu-11-azure-jdk_11.2.3-11.0.1-win_x64.zip'
+$azulJDK8Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-8/8u202/zulu-8-azure-jdk_8.36.0.1-8.0.202-win_x64.zip'
+$azulJDK11Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.2/zulu-11-azure-jdk_11.29.3-11.0.2-win_x64.zip'
 
 cd $env:TEMP
 
