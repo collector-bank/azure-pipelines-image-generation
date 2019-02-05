@@ -9,12 +9,10 @@ $pythonVersions = @(
     ('2.7.14', 'x86'),
     ('3.4.4', 'x86'),
     ('3.5.4', 'x86'),
-    ('3.6.4', 'x86'),
     ('3.7.0', 'x86')
     ('2.7.14', 'x64'),
     ('3.4.4', 'x64'),
     ('3.5.4', 'x64'),
-    ('3.6.4', 'x64'),
     ('3.7.0', 'x64')
 )
 
@@ -32,7 +30,6 @@ foreach ($version in $pythonVersions)
     else
     {
         Write-Host "Python $v ($arch) is not installed"
-        exit 1
     }
 
     if (Test-Path "$path\Scripts\pip.exe")
@@ -43,7 +40,6 @@ foreach ($version in $pythonVersions)
     else
     {
         Write-Host "Pip for Python $v ($arch) is not installed"
-        exit 1
     }
 }
 
