@@ -17,6 +17,16 @@ Function InstallVS
 
   try
   {
+    Write-Host "Enable short name support on Windows needed for Xamarin Android AOT, defaults appear to have been changed in Azure VMs"
+    $shortNameEnableProcess = Start-Process -FilePath fsutil.exe -ArgumentList ('8dot3name', 'set', '0') -Wait -PassThru
+    $shortNameEnableExitCode = $shortNameEnableProcess.ExitCode
+
+    if ($shortNameEnableExitCode -ne 0)
+    {
+      Write-Host -Object 'Enabling short name support on Windows failed. This needs to be enabled prior to VS 2017 install for Xamarin Andriod AOT to work.'
+      exit $shortNameEnableExitCode
+    }
+
     Write-Host "Downloading Bootstrapper ..."
     Invoke-WebRequest -Uri $VSBootstrapperURL -OutFile "${env:Temp}\vs_$Sku.exe"
 
