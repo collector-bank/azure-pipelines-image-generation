@@ -102,6 +102,7 @@
                 "{{template_dir}}/scripts/installers/dotnetcore-sdk.sh",
                 "{{template_dir}}/scripts/installers/erlang.sh",
                 "{{template_dir}}/scripts/installers/firefox.sh",
+                "{{template_dir}}/scripts/installers/gcc.sh",
                 "{{template_dir}}/scripts/installers/git.sh",
                 "{{template_dir}}/scripts/installers/go.sh",
                 "{{template_dir}}/scripts/installers/google-chrome.sh",
@@ -126,7 +127,8 @@
                 "{{template_dir}}/scripts/installers/scala.sh",
                 "{{template_dir}}/scripts/installers/sphinx.sh",
                 "{{template_dir}}/scripts/installers/subversion.sh",
-                "{{template_dir}}/scripts/installers/terraform.sh"
+                "{{template_dir}}/scripts/installers/terraform.sh",
+                "{{template_dir}}/scripts/installers/vcpkg.sh"
             ],
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
@@ -139,6 +141,7 @@
             "type": "shell",
             "scripts":[
                 "{{template_dir}}/scripts/installers/android.sh",
+                "{{template_dir}}/scripts/installers/azpowershell.sh",
                 "{{template_dir}}/scripts/helpers/containercache.sh",
                 "{{template_dir}}/scripts/installers/hosted-tool-cache.sh"
             ],

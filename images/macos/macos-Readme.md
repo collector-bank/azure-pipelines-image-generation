@@ -4,33 +4,33 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Operating System
 
-- OS X 10.13.6 (17G65) **High Sierra**
+- OS X 10.13.6 (17G5019) **High Sierra**
 
 ## Installed Software
 
 ### Language and Runtime
 
 - Java 1.7.0_80
-- Java 1.8.0_192
+- Java 1.8.0_202
 - Java 9.0.4
 - Java 10.0.2
-- Java 11.0.1
+- Java 11.0.2
 - Node.js 6.16.0
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.1.1
+- PowerShell 6.1.2
 - Python 2.7.10
 - Python 3.7.2
-- Ruby 2.6.0p0
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502 2.2.101, 2.2.102
-- Go 1.11.4
+- Ruby 2.6.1p33
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502 2.2.101, 2.2.102, 2.2.103
+- Go 1.11.5
 
 ### Package Management
 
 - Bundler 2.0.1
-- Carthage 0.31.2
+- Carthage 0.32.0
 - CocoaPods 1.5.3
-- Homebrew 1.9.2
+- Homebrew 2.0.0
 - NPM 3.10.10
 - Yarn 1.13.0
 - NuGet 4.7.0.5148
@@ -40,7 +40,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Project Management
 
 - Apache Maven 3.6.0
-- Gradle 5.1.1
+- Gradle 5.2.0
 
 ### Utilities
 
@@ -52,9 +52,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Tools
 
-- fastlane 2.113.0
-- App Center CLI 1.1.9
-- Azure-CLI 2.0.54
+- fastlane 2.115.0
+- App Center CLI 1.1.11
+- Azure-CLI 2.0.57
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
@@ -76,7 +76,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xcode Support Tools
 
-- Nomad CLI 3.0.1
+- Nomad CLI 3.0.2
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
@@ -459,6 +459,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | build-tools-26.0.0    | Android SDK Build-tools, Revision 26.0.0  |
 | build-tools-26.0.1    | Android SDK Build-tools, Revision 26.0.1  |
 | build-tools-26.0.2    | Android SDK Build-tools, Revision 26.0.2  |
+| build-tools-26.0.3    | Android SDK Build-tools, Revision 26.0.3  |
 | build-tools-27.0.0    | Android SDK Build-tools, Revision 27.0.0  |
 | build-tools-27.0.1    | Android SDK Build-tools, Revision 27.0.1  |
 | build-tools-27.0.2    | Android SDK Build-tools, Revision 27.0.2  |
@@ -474,9 +475,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
 | lldb                  | 2.3.3614996                               |
-| ndk-bundle            | 18.0.5002713                              |
+| ndk-bundle            | 19.0.5232133                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 28.0.20                                    |
+| Android Emulator      | 28.0.23                                    |
 
 ### Google APIs
 
@@ -500,7 +501,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 7.7.1.15
+- 7.7.3.43
 
 ### Mono
 
@@ -517,6 +518,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.iOS SDK
 
+- 12.2.1.13
 - 12.2.1.11
 - 12.0.0.15
 - 12.0.0.10
@@ -530,8 +532,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - 10.10.0.36
 - 10.6.0.10
 
+
 ### Xamarin.Android SDK
 
+- 9.1.5-1
 - 9.1.0-38
 - 9.0.0-20
 - 9.0.0-18
@@ -546,6 +550,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.Mac SDK
 
+- 5.2.1.13
 - 5.3.1.28
 - 5.2.1.11
 - 4.99.3.740

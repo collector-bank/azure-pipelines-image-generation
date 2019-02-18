@@ -4,4 +4,4 @@
 ##  Desc:  Install Powershel Core
 ################################################################################
 
-choco install powershell-core --version 6.1.1 -y
+Invoke-Expression "& { $(Invoke-RestMethod https://aka.ms/install-powershell.ps1) } -UseMSI -Quiet"

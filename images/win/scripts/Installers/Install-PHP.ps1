@@ -3,12 +3,13 @@
 ##  Team:  CI-X
 ##  Desc:  Install PHP
 ################################################################################
+$ErrorActionPreference = "Stop"
 
 Import-Module -Name ImageHelpers
 
-# Install PHP 7.2.12
-choco install php -y --force
-$installDir = "c:\tools\php72"
+# Install latest PHP in chocolatey
+$installDir = "c:\tools\php"
+choco install php -y --force --params "/InstallDir:$installDir"
 
 # curl and mbstring extension needed for tests
 ((Get-Content -path $installDir\php.ini -Raw) -replace ';extension=curl','extension=curl' -replace ';extension=mbstring','extension=mbstring') | Set-Content -Path $installDir\php.ini
@@ -18,5 +19,3 @@ setx PHPROOT $installDir /M
 
 # Done
 exit 0
-
-

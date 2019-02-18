@@ -9,6 +9,7 @@ This repo contains scripts that generate the Linux and Windows virtual machine i
 
 - [macOS 10.13](images/macos/macos-Readme.md)
 - [Ubuntu 16.04](images/linux/Ubuntu1604-README.md)
+- [VS 2019 + Windows Server 2019](images/win/Vs2019-Server2019-Readme.md)
 - [VS 2017 + Windows Server 2016](images/win/Vs2017-Server2016-Readme.md)
 - [VS 2015 + Windows Server 2012 R2](images/win/Vs2015-Server2012R2-Readme.md)
 - [Windows Container 1803](images/win/WindowsContainer1803-Readme.md)

@@ -57,10 +57,6 @@ function Install-GoVersion
     return "C:\$newDirName"
 }
 
-# Install Go 1.9.x
-$installDirectory = Install-GoVersion -goVersion '1.9.7' -addToDefaultPath $False
-setx GOROOT_1_9_X64 "$installDirectory" /M
-
 # Install Go 1.10.x
 $installDirectory = Install-GoVersion -goVersion '1.10.8' -addToDefaultPath $False
 setx GOROOT_1_10_X64 "$installDirectory" /M

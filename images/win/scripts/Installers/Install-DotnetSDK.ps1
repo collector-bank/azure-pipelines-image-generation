@@ -51,3 +51,4 @@ $dotnetReleases | ForEach-Object {
 }
 
 Add-MachinePathItem "C:\Program Files\dotnet"
+Add-MachinePathItem "C:\Users\VssAdministrator\.dotnet\tools"

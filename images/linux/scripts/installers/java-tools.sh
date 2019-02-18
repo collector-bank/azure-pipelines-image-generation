@@ -37,11 +37,21 @@ ln -s /usr/share/apache-maven-3.6.0/bin/mvn /usr/bin/mvn
 echo "M2_HOME=/usr/share/apache-maven-3.6.0" | tee -a /etc/environment
 
 # Install Gradle
-gradle_version="5.1.1"
-curl -sL https://services.gradle.org/distributions/gradle-"${gradle_version}"-bin.zip -o gradle-"${gradle_version}".zip
-unzip -d /usr/share gradle-"${gradle_version}".zip
-ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle
-rm gradle-"${gradle_version}".zip
+# This script downloads the latest HTML list of releases at https://gradle.org/releases/.
+# Then, it extracts the top-most release download URL, relying on the top-most URL being for the latest release.
+# The release download URL looks like this: https://services.gradle.org/distributions/gradle-5.2.1-bin.zip
+# The release version is extracted from the download URL (i.e. 5.2.1).
+# After all of this, the release is downloaded, extracted, a symlink is created that points to it, and GRADLE_HOME is set.
+wget -O gradleReleases.html https://gradle.org/releases/
+gradleUrl=$(grep -m 1 -o "https:\/\/services.gradle.org\/distributions\/gradle-.*-bin\.zip" gradleReleases.html | head -1)
+gradleVersion=$(echo $gradleUrl | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p')
+rm gradleReleases.html
+echo "gradleUrl=$gradleUrl"
+echo "gradleVersion=$gradleVersion"
+curl -sL $gradleUrl -o gradleLatest.zip
+unzip -d /usr/share gradleLatest.zip
+rm gradleLatest.zip
+ln -s /usr/share/gradle-"${gradleVersion}"/bin/gradle /usr/bin/gradle
 echo "GRADLE_HOME=/usr/share/gradle" | tee -a /etc/environment
 
 # Run tests to determine that the software installed as expected
@@ -59,5 +69,5 @@ DocumentInstalledItem "Azul JDK (7) ($(/usr/lib/jvm/zulu-7-azure-amd64/bin/java 
 DocumentInstalledItem "Azul JDK (8) ($(/usr/lib/jvm/zulu-8-azure-amd64/bin/java -showversion |& head -n 1))"
 DocumentInstalledItem "Azul JDK (11) ($(/usr/lib/jvm/zulu-11-azure-amd64/bin/java -showversion |& head -n 1))"
 DocumentInstalledItem "Ant ($(ant -version))"
-DocumentInstalledItem "Gradle ${gradle_version}"
+DocumentInstalledItem "Gradle ${gradleVersion}"
 DocumentInstalledItem "Maven ($(mvn -version | head -n 1))"
