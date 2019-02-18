@@ -22,7 +22,6 @@
         "vnet_name": "#{vnet_name}",
         "vnet_group_name": "#{vnet_group_name}",
         "subnet_name": "#{subnet_name}"
-
     },
     "builders": [
         {
