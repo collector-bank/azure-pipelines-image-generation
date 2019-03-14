@@ -63,7 +63,6 @@ Function InstallVS
 
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Component.CPython2.x64 ' + `
-              '--add Component.CPython3.x64 ' + `
               '--add Component.Linux.CMake ' + `
               '--add Component.UnityEngine.x64 ' + `
               '--add Component.UnityEngine.x86 ' + `
@@ -126,13 +125,14 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Workload.Node ' + `
               '--add Microsoft.VisualStudio.Workload.Office ' + `
               '--add Microsoft.VisualStudio.Workload.Python ' + `
+              '--remove Component.CPython3.x64 ' + `
               '--add Microsoft.VisualStudio.Workload.Universal ' + `
               '--add Microsoft.VisualStudio.Workload.VisualStudioExtension'
 
 
-$ReleaseInPath = 'Preview'
+$ReleaseInPath = 'Enterprise'
 $Sku = 'Enterprise'
-$VSBootstrapperURL = 'https://aka.ms/vs/16/pre/vs_Enterprise.exe'
+$VSBootstrapperURL = 'https://aka.ms/vs/16/release/vs_Enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 

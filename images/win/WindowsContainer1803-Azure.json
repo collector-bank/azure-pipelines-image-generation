@@ -102,6 +102,12 @@
             ]
         },
         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-PowershellCore.ps1"
+            ]
+        },
+        {
             "type": "windows-restart",
             "restart_timeout": "30m"
         },
@@ -109,6 +115,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Docker.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-PowershellCore.ps1"
             ]
         },
         {

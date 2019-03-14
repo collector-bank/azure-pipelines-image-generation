@@ -2,6 +2,10 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS Preview' pool).
 
+## Upcoming Image Changes
+
+We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+
 ## Operating System
 
 - OS X 10.13.6 (17G5019) **High Sierra**
@@ -18,19 +22,19 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Node.js 6.16.0
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.1.2
-- Python 2.7.10
+- PowerShell 6.1.3
+- Python 2.7.15
 - Python 3.7.2
 - Ruby 2.6.1p33
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502 2.2.101, 2.2.102, 2.2.103
-- Go 1.11.5
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104
+- Go 1.12
 
 ### Package Management
 
 - Bundler 2.0.1
 - Carthage 0.32.0
 - CocoaPods 1.5.3
-- Homebrew 2.0.0
+- Homebrew 2.0.2
 - NPM 3.10.10
 - Yarn 1.13.0
 - NuGet 4.7.0.5148
@@ -40,21 +44,21 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Project Management
 
 - Apache Maven 3.6.0
-- Gradle 5.2.0
+- Gradle 5.2.1
 
 ### Utilities
 
 - curl 7.63.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.20.1
-- Git LFS 2.6.1
+- Git 2.21.0
+- Git LFS 2.7.0
 - GNU Wget 1.20.1
 - Subversion (SVN) 1.11.1
 
 ### Tools
 
-- fastlane 2.115.0
-- App Center CLI 1.1.11
-- Azure-CLI 2.0.57
+- fastlane 2.116.1
+- App Center CLI 1.1.12
+- Azure-CLI 2.0.58
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
@@ -475,7 +479,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
 | lldb                  | 2.3.3614996                               |
-| ndk-bundle            | 19.0.5232133                              |
+| ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
 | Android Emulator      | 28.0.23                                    |
 
@@ -501,7 +505,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 7.7.3.43
+- 7.8.0.1624
 
 ### Mono
 
@@ -518,7 +522,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.iOS SDK
 
-- 12.2.1.13
+- 12.2.1.15
 - 12.2.1.11
 - 12.0.0.15
 - 12.0.0.10
@@ -550,7 +554,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.Mac SDK
 
-- 5.2.1.13
+- 5.2.1.15
 - 5.3.1.28
 - 5.2.1.11
 - 4.99.3.740

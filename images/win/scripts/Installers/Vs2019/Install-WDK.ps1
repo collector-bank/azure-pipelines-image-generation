@@ -34,7 +34,7 @@ if ($wdkExitCode -ne 0)
 # Write-Host "Installing WDK.vsix"
 <# ISSUE - VSIX installer failing on VS2019
  $process = Start-Process `
-    -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\IDE\VSIXInstaller.exe" `
+    -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VSIXInstaller.exe" `
     -ArgumentList ("/quiet", '"C:\Program Files (x86)\Windows Kits\10\Vsix\WDK.vsix"') `
     -Wait `
     -PassThru

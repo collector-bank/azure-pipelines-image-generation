@@ -26,7 +26,7 @@ If you have an issue or request for an image, please create an issue in this rep
 
 ### Windows
 
-- [Instructions to build VS2017-Win16 images](docs/vs2017.md)
+- [Instructions to build Windows images](docs/CreateImageAndAzureResources.md)
 - [How to use Packer to create Windows VM images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer)
 
 ## Contributing

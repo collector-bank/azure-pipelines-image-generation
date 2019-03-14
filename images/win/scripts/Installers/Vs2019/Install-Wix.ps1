@@ -11,7 +11,7 @@ function Install-VsixExtension
         [String]$Name
     )
 
-    $ReleaseInPath = 'Preview'
+    $ReleaseInPath = 'Enterprise'
     $exitCode = -1
 
     try

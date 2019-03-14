@@ -66,6 +66,9 @@ Write-Host "Setting local execution policy"
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine  -ErrorAction Continue | Out-Null
 Get-ExecutionPolicy -List
 
+Write-Host "Enable long path behavior"
+# See https://docs.microsoft.com/en-us/windows/desktop/fileio/naming-a-file#maximum-path-length-limitation
+Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 Write-Host "Install chocolatey"
 $chocoExePath = 'C:\ProgramData\Chocolatey\bin'

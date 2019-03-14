@@ -171,12 +171,6 @@
             ]
         },
         {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Vs2019/Install-Python.ps1"
-            ]
-        },
-        {
             "type": "windows-restart",
             "restart_timeout": "10m"
         },
@@ -207,12 +201,6 @@
         {
             "type": "powershell",
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Validate-Python.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Update-DotnetTLS.ps1"
             ]
         },
@@ -225,7 +213,19 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-AzureDevOpsCli.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Download-ToolCache.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Vs2019/Install-Python.ps1"
             ]
         },
         {
@@ -236,8 +236,12 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "GO_VERSIONS=1.10.8,1.11.5,1.12",
+                "GO_DEFAULT=1.12"
+            ],
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Vs2019/Install-Go.ps1"
+                "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
             ]
         },
          {
@@ -392,6 +396,16 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "BOOST_VERSIONS=1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Mercurial.ps1"
             ]
@@ -463,7 +477,19 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-AzureDevOpsCli.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-ToolCache.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Python.ps1"
             ]
         },
         {
@@ -474,11 +500,25 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "GO_VERSIONS=1.10.8,1.11.5,1.12",
+                "GO_DEFAULT=1.12"
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Go.ps1"
             ]
         },
-          {
+        {
+            "type": "powershell",
+            "environment_vars": [
+                "BOOST_VERSIONS=1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Boost.ps1"
+            ]
+        },
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-PHP.ps1"

@@ -92,6 +92,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Web.Mvc4.ComponentGroup ' + `
                 '--add Component.CPython2.x64 ' + `
                 '--add Microsoft.Component.PythonTools.UWP ' + `
+                '--remove Component.CPython3.x64 ' + `
                 '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM ' + `
                 '--add Microsoft.VisualStudio.ComponentGroup.UWP.VC ' + `
